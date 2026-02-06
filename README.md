@@ -1,16 +1,36 @@
-# React + Vite
+# AI Chef React Demo 🍳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚠️ **Study Project / Demo**  
+This project was created following a [Scrimba React course](https://scrimba.com/) for learning purposes.  
+The AI functionality is **disabled** in this public version, and all recipes shown are **static examples**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
+- Users can enter ingredients (demo only)  
+- Clicking **Show Sample Recipe** displays a **static example recipe**  
+- Recipes are **not generated dynamically**  
+- This project demonstrates React state, components, and basic form handling
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React  
+- Vite  
+- JavaScript  
+- CSS  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How it works
+1. Enter ingredients in the input field  
+2. Once you have more than 3 ingredients, click **Show Sample Recipe**  
+3. A **static sample recipe** is displayed  
+4. ⚠️ In a production version, this would use AI to generate recipes dynamically
+
+---
+
+## Credits
+Project inspired by the [Scrimba React course](https://scrimba.com/)
+
+---
