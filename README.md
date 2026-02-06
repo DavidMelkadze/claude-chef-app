@@ -6,6 +6,12 @@ The AI functionality is **disabled** in this public version, and all recipes sho
 
 ---
 
+## Live Demo
+
+You can see the AI Chef project live here: [AI Chef Live Demo](https://claude-chef-app.vercel.app/)
+
+---
+
 ## About
 - Users can enter ingredients (demo only)  
 - Clicking **Show Sample Recipe** displays a **static example recipe**  
