@@ -1,4 +1,4 @@
-import { useState } from "react" 
+import { useState, useRef, useEffect } from "react" 
 import IngredientsList from "./IngredientsList.jsx"
 import Recipe from "./Recipe.jsx"
 
@@ -7,6 +7,14 @@ export default function Main() {
     const [ingredients, setIngredients] = useState([])
 
     const [ recipeShown, setRecipeShown ] = useState(false)
+
+    const recipeSection = useRef(null)
+
+   useEffect(() => {
+    if (recipeShown !== "" && recipeSection.current !== null) {
+        recipeSection.current.scrollIntoView({ behavior: "smooth" })
+        }
+    }, [recipeShown])
 
     function toggleRecipeShown() {
         setRecipeShown(prevShown => !prevShown)
@@ -29,7 +37,7 @@ export default function Main() {
             <button>Add Ingredient</button>
         </form>
 
-        {ingredients.length > 0 && <IngredientsList ingredients={ingredients} toggleRecipeShown={toggleRecipeShown} />}
+        {ingredients.length > 0 && <IngredientsList ref={recipeSection} ingredients={ingredients} toggleRecipeShown={toggleRecipeShown} />}
 
         {recipeShown && <Recipe />}
 
