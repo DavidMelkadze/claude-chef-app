@@ -11,7 +11,7 @@ export default function Main() {
     const recipeSection = useRef(null)
 
    useEffect(() => {
-    if (recipeShown !== "" && recipeSection.current !== null) {
+    if ( recipeShown && recipeSection.current ) {
         recipeSection.current.scrollIntoView({ behavior: "smooth" })
         }
     }, [recipeShown])
