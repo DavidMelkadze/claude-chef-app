@@ -37,7 +37,7 @@ export default function Main() {
             <button>Add Ingredient</button>
         </form>
 
-        {ingredients.length > 0 && <IngredientsList ref={recipeSection} ingredients={ingredients} toggleRecipeShown={toggleRecipeShown} />}
+        {ingredients.length > 0 && <IngredientsList recipeRef={recipeSection} ingredients={ingredients} toggleRecipeShown={toggleRecipeShown} />}
 
         {recipeShown && <Recipe />}
 
