@@ -40,3 +40,7 @@ You can see the AI Chef project live here: [AI Chef Live Demo](https://claude-ch
 Project inspired by the [Scrimba React course](https://scrimba.com/)
 
 ---
+
+👤 Author
+
+David — Frontend Developer in progress 🚀 Focused on building clean, interactive React apps.
